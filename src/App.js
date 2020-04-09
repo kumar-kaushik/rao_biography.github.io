@@ -59,8 +59,15 @@ export default class App extends Component {
   render() {
     return (
       <div>
-        <Header />
+        <Header
+          primaryHeading="MY JOURNEY AS AN ENTREPRENEUR"
+          secondaryHeading="Venkateswara Rao Tallam"
+        />
         <Timeline />
+        <div className="header ending-note">
+          { `“During this Journey, I have overcome several hurdles while making acquisitions, exploration, manufacturing, establishments, imports, exports, etc but was never
+            disappointed. I keep moving on, working hard in establishing industries and preparing my team to maintain those clustures in different parts of the states.”` }
+        </div>
       </div>
     );
   }

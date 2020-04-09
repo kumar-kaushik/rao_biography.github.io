@@ -7,10 +7,12 @@ $secondary-text: #757575;
 $accent: #FF4081;
 
 .timeline {
-	padding: 100px 0;
-	padding-left: 50px;
-	padding-right: 50px;
+	padding: 0 50px 100px 50px;
 	background-color: #eeeeee;
+}
+
+.container {
+	padding-top: 100px;
 }
 
 body {
@@ -29,7 +31,8 @@ body {
 }
 
 h1 {
-  font-size: 200%;
+	font-size: 200%;
+	text-align: center;
   text-transform: uppercase;
   letter-spacing: 3px;
   font-weight: 400;
@@ -38,11 +41,12 @@ h1 {
 .header {
 	background: $primary;
 	color: $text;
-	padding: 150px 0;
+	padding: 100px 0;
 
 	p {
 		font-family: 'Allura';
-		color: rgba(255, 255, 255, .2);
+		text-align: center;
+		color: rgba(255, 255, 255, .6);
 		margin-bottom: 0;
 		font-size: 60px;
 		margin-top: -30px;
@@ -58,7 +62,7 @@ h1 {
 		content: '';
 		background: $light-primary;
 		width: 5px;
-		height: 95%;
+		height: 100%;
 		position: absolute;
 		left: 50%;
 		transform: translateX(-50%);
@@ -205,9 +209,16 @@ blockquote {
 	right: 0;
 }
 
+.ending-note {
+	padding: 50px;
+	text-align: justify;
+	font-size: 1.4em;
+}
+
 @media screen and (max-width: 768px) {
 
 	.timeline {
+		padding: 0 20px 50px 20px;
 
 		&::before {
 			left: 50px;
