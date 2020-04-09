@@ -1,0 +1,46 @@
+{
+  "name": "Tallam Venkateswara Rao",
+  "events": [
+    {
+      "date": "1969",
+      "title": "Birthplace",
+      "direction": "left",
+      "image": "railway_bridge.jpg",
+      "content": "Born to Smt Venkata Subbamma & Shri Venkata Pitchayya @Rajahmundry. They hailed from Guntur and had establised a brass and graphite-crucible industry."
+    },
+    {
+      "date": "1985-88",
+      "direction": "right",
+      "title": "Graduation",
+      "image": "arts_college.jpg",
+      "content": "Successfully completed Biology in intermediete but failed to get a medicine seat. Took a change in track and got into B.Sc.Geology for further studies. Simultaneosly completed typewriting higher in Telugu, English and Hindi along with Stenography."
+    },
+    {
+      "date": "1988-91",
+      "direction": "left",
+      "title": "Post Graduation",
+      "image": "andhra_university_1.jpg",
+      "content": "Got PG admission in applied Geology in Andhra University Campus (Vishakapatnam) where I have nurtuted and moulded as a mature person."
+    },
+    {
+      "date": "1991-2004",
+      "direction": "right",
+      "title": "Vasavi Business Centre",
+      "image": "vasavi_4.jpg",
+      "content": "Got an oppurtunity to start a unique business having all types of communications and reprographics under one roof."
+    },
+    {
+      "date": "1993-96",
+      "direction": "left",
+      "title": "Aqua Culture (Tiger Prawns)",
+      "image": "prawns_1.jpg",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores. Alias, ullam."
+    },
+    {
+      "date": "1 MAY 2016",
+      "direction": "left",
+      "title": "Kaushik",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores. Alias, ullam."
+    }
+  ]
+}
