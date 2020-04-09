@@ -46,11 +46,11 @@ h1 {
 	p {
 		font-family: 'Allura';
 		text-align: center;
-		color: rgba(255, 255, 255, .6);
+		color: rgba(255, 255, 255, .9);
 		margin-bottom: 0;
 		font-size: 60px;
 		margin-top: -30px;
-
+		padding-top: 15px;
 	}
 }
 
@@ -193,10 +193,13 @@ a {
 }
 
 blockquote {
-	margin-top: 30px;
-	color: $secondary-text;
-	border-left-color: $primary;
-	padding: 0 20px;
+	font-family: Georgia, serif;
+	font-size: 1.2em;
+	font-style: italic;
+	max-width: 1100px;
+	line-height: 1.45;
+	position: relative;
+	color: $text;
 }
 
 .date {
@@ -211,11 +214,21 @@ blockquote {
 
 .ending-note {
 	padding: 50px;
-	text-align: justify;
-	font-size: 1.4em;
 }
 
 @media screen and (max-width: 768px) {
+
+	.ending-note {
+		padding: 20px;
+	}
+
+	.header {
+		p {
+			padding-top: 30px;
+			padding: 20px;
+			font-size: 2em;
+		}
+	}
 
 	.timeline {
 		padding: 0 20px 50px 20px;
