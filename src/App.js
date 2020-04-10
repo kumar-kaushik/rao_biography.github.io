@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import ScrollReveal from 'scrollreveal';
 import Header from './Header';
 import Timeline from './Timeline';
+import data from './data.json';
 
 export default class App extends Component {
 
@@ -57,17 +58,17 @@ export default class App extends Component {
   }
 
   render() {
+    const { title, name, events, afternote } = data;
     return (
       <div>
         <Header
-          primaryHeading="MY JOURNEY AS AN ENTREPRENEUR"
-          secondaryHeading="Venkateswara Rao Tallam"
+          primaryHeading={ title }
+          secondaryHeading={ name }
         />
-        <Timeline />
+        <Timeline data={ events } />
         <div className="header ending-note">
           <blockquote>
-            { `“During this Journey, I have overcome several hurdles while making acquisitions, exploration, manufacturing, establishments, imports, exports, etc but never
-            disappointed. I keep moving on, working hard in establishing industries and preparing my team to maintain those clustures in different parts of the states.”` }
+            { afternote }
           </blockquote>
         </div>
       </div>

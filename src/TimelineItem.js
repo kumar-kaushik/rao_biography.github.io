@@ -24,7 +24,7 @@ export default class TimelineItem extends Component {
     return (
       <div className="timeline-item">
         <div className="timeline-img" />
-        <div className={ classNames('timeline-content', {
+        <div className={ classNames('timeline-content', direction, {
           'js--fadeInRight': direction === 'right',
           'js--fadeInLeft': direction === 'left',
           'timeline-card': !!image

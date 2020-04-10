@@ -7,7 +7,7 @@ export default class Header extends Component {
     const { secondaryHeading } = this.props;
     return (
       <div className="header">
-        <div className="container text-center">
+        <div className="text-center">
           <h1> { primaryHeading }</h1>
           { secondaryHeading && <p>{ secondaryHeading }</p> }
         </div>

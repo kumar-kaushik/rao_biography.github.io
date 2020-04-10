@@ -6,6 +6,29 @@ $primary-text: #212121;
 $secondary-text: #757575;
 $accent: #FF4081;
 
+@mixin timeline-content-after {
+  content: '';
+  position: absolute;
+  border-style: solid;
+  width: 0;
+	height: 0;
+	top: 30px;
+}
+
+@mixin content-left-after {
+  @include timeline-content-after;
+	right: -15px;
+	border-width: 10px 0 10px 15px;
+	border-color: transparent transparent transparent #f5f5f5;
+}
+
+@mixin content-right-after {
+  @include timeline-content-after;
+	left: -15px;
+	border-width: 10px 15px 10px 0;
+	border-color: transparent #f5f5f5 transparent transparent;
+}
+
 .timeline {
 	padding: 0 50px 100px 50px;
 	background-color: #eeeeee;
@@ -72,32 +95,6 @@ h1 {
 .timeline-item {
 	width: 100%;
 	margin-bottom: 70px;
-
-	&:nth-child(even) {
-
-		.timeline-content {
-			float: right;
-			padding: 40px 30px 10px 30px;
-
-			.date {
-				right: auto;
-				left: 0;
-			}
-
-			&::after {
-				content: '';
-				position: absolute;
-				border-style: solid;
-				width: 0;
-				height: 0;
-				top: 30px;
-				left: -15px;
-				border-width: 10px 15px 10px 0;
-				border-color: transparent #f5f5f5 transparent transparent;
-			}
-		}
-	}
-
 	&::after {
 		content: '';
 		display: block;
@@ -109,10 +106,28 @@ h1 {
 .timeline-content {
 	position: relative;
 	width: 40%;
-	padding: 10px 30px;
 	border-radius: 4px;
 	background: #ffffff;
-	box-shadow: 0 20px 25px -15px rgba(0, 0, 0, .3);
+  box-shadow: 0 20px 25px -15px rgba(0, 0, 0, .3);
+  
+  &.left {
+    padding: 10px 30px;
+    &::after {
+      @include content-left-after;
+    }
+  }
+
+  &.right {
+    float: right;
+    padding: 40px 30px 10px 30px;
+    .date {
+      right: auto;
+      left: 0;
+    }
+    &::after {
+      @include content-right-after;
+    }
+  }
 
 	&::after {
 		content: '';
@@ -244,38 +259,12 @@ blockquote {
 		.timeline-content {
 			max-width: 100%;
 			width: auto;
-			margin-left: 70px;
-		}
-
-		.timeline-item {
-
-			&:nth-child(even) {
-
-				.timeline-content {
-					float: none;
-
-				}
-			}
-
-			&:nth-child(odd) {
-
-				.timeline-content {
-					
-					&::after {
-						content: '';
-						position: relative;
-						border-style: solid;
-						width: 0;
-						height: 0;
-						top: 30px;
-						left: -15px;
-						border-width: 10px 15px 10px 0;
-						border-color: transparent #f5f5f5 transparent transparent;
-					}
-				}
-
-			}
-		}
+      margin-left: 70px;
+      float: none;
+      &::after {
+        @include content-right-after;
+      }
+    }
 	}
-	
+
 }
