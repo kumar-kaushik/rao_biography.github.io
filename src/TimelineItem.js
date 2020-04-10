@@ -1,9 +1,30 @@
 import React, { Component } from 'react';
 import classNames from 'classnames';
+import sr from './libraries/scrollReveal';
 
 const images = require.context('./images', true);
 
 export default class TimelineItem extends Component {
+
+  constructor (props) {
+    super(props);
+    this.itemRef = React.createRef();
+  }
+
+  bindRef = ref => {
+    this.itemRef = ref;
+  }
+
+  componentDidMount() {
+    const { direction } = this.props;
+
+    sr.reveal(this.itemRef, {
+      origin: window.screen.width <= 768 ? 'right' : direction,
+      distance: '300px',
+      easing: 'ease-in-out',
+      duration: 800
+    });
+  }
 
   renderTitle () {
     const { image, title } = this.props;
@@ -25,14 +46,12 @@ export default class TimelineItem extends Component {
       <div className="timeline-item">
         <div className="timeline-img" />
         <div className={ classNames('timeline-content', direction, {
-          'js--fadeInRight': direction === 'right',
-          'js--fadeInLeft': direction === 'left',
           'timeline-card': !!image
-        }) }>
+        }) } ref={ this.bindRef }>
           { this.renderTitle() }
           <div className="date">{ date }</div>
           <p>{ content }</p>
-          {/* <a className="bnt-more" href="www.google.com">More</a> */}
+          {/* <a className="bnt-more" href="https://www.google.com">More</a> */}
         </div>
 
       </div>

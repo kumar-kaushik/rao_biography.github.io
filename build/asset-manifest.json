@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "./build/static/css/main.f5e5eff4.chunk.css",
-    "main.js": "./build/static/js/main.543f1932.chunk.js",
-    "main.js.map": "./build/static/js/main.543f1932.chunk.js.map",
+    "main.js": "./build/static/js/main.5fea929c.chunk.js",
+    "main.js.map": "./build/static/js/main.5fea929c.chunk.js.map",
     "runtime~main.js": "./build/static/js/runtime~main.c9f15127.js",
     "runtime~main.js.map": "./build/static/js/runtime~main.c9f15127.js.map",
     "static/js/2.8a02cf40.chunk.js": "./build/static/js/2.8a02cf40.chunk.js",
     "static/js/2.8a02cf40.chunk.js.map": "./build/static/js/2.8a02cf40.chunk.js.map",
     "index.html": "./build/index.html",
-    "precache-manifest.07a3a069802e876a401a9f608fef8fc3.js": "./build/precache-manifest.07a3a069802e876a401a9f608fef8fc3.js",
+    "precache-manifest.12216ef2feade33797ffdcb383057bb7.js": "./build/precache-manifest.12216ef2feade33797ffdcb383057bb7.js",
     "service-worker.js": "./build/service-worker.js",
     "static/css/main.f5e5eff4.chunk.css.map": "./build/static/css/main.f5e5eff4.chunk.css.map",
     "static/media/andhra_university.jpg": "./build/static/media/andhra_university.cc159374.jpg",
